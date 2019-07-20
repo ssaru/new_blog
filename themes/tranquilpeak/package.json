@@ -56,6 +56,7 @@
     "gitalk": "1.5.0",
     "gitment": "0.0.3",
     "hexo-algoliasearch": "^0.4.1",
+    "hexo-deployer-git": "^1.0.0",
     "hexo-util": "0.6.3",
     "jquery": "3.4.1",
     "jsdom": "15.1.1",

@@ -81,7 +81,9 @@ theme: tranquilpeak
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: https://github.com/ssaru/ssaru.github.io
+  branch: master
 
 feed:
   type: atom
