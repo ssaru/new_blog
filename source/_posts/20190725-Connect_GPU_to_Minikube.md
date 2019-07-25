@@ -4,11 +4,11 @@ date: 2019-07-25 21:56:53
 tags: kubernetes, minikube, gpu, cloud
 coverImage: cover.jpeg
 thumbnailImage: cover.jpeg
+autoThumbnailImage: yes
+photos: https://images.unsplash.com/photo-1512756290469-ec264b7fbf87?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1549&q=80
 ---
 
 <!-- toc -->
-
-# Minikube에 GPU 연결
 
 # Abstract
 
@@ -425,5 +425,5 @@ GPU 컨테이너를 생성할 yaml파일을 생성한다. 이는 실제로 컨�
 
 - [문동욱](https://evan-moon.github.io/)
 - [정미연](https://lovablebaby1015.wordpress.com/)
-- [김수정](github.com/soodevv)
+- [김수정](https://github.com/soodevv)
 - [김보섭](https://aisolab.github.io/)
