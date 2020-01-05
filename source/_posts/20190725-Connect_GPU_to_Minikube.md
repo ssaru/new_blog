@@ -1,6 +1,8 @@
 ---
 title: Connect GPU to Minikube
 date: 2019-07-25 21:56:53
+tags: [Minikube, GPU, Kubernetes]
+categories: [Develop, Cloud]
 keywords:
 - kubernetes
 - minikube
@@ -8,15 +10,20 @@ keywords:
 - cloud
 coverImage: cover.jpeg
 thumbnailImage: cover.jpeg
+thumbnailImagePosition: left
 autoThumbnailImage: yes
 photos: https://images.unsplash.com/photo-1512756290469-ec264b7fbf87?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1549&q=80
 ---
+
+이번 포스팅에는 Minikube에서 GPU 컨테이너 사용이 가능하도록 설정하는 방법에 대해서 포스팅한다.
+
+<!-- excerpt -->
 
 <!-- toc -->
 
 # Abstract
 
-필자는 현재 쿠버네티스(Kubernetes, 이하 쿠버네티스)를 이용하여 *딥러닝을 지원하는 마이크로 아키텍쳐(Micro Architecture, 이하 마이크로 아키텍쳐) 프레임워크 개발 및 연구*를 진행 중이다.
+현재 쿠버네티스(Kubernetes, 이하 쿠버네티스)를 이용하여 *딥러닝을 지원하는 마이크로 아키텍쳐(Micro Architecture, 이하 마이크로 아키텍쳐) 프레임워크 개발 및 연구*를 진행 중이다.
 
 일반적으로 개발 및 연구 프로젝트의 원활한 진행을 위해서는 개발한 기능을 테스트하기 위한 개발 환경 구축이 필요하게 된다. 필자는 이전에 개발한 기능을 테스트하기 위해서 쿠버네티스 기반으로 작성되어있던 프레임워크를 미니쿠베(minikube, 이하 미니쿠베)에서 구동시키고 테스트하는 작업을 수행했었다.
 

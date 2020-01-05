@@ -1,6 +1,8 @@
 ---
 title: How the Eye of A.I Sees
 date: 2019-08-06 16:23:55
+tags: [CNN, Convolutional Neural Network, Shape Bias, Texture Bias]
+categories: [Ai, Paper review]
 keywords:
 - CNN
 - AI
@@ -9,6 +11,7 @@ keywords:
 - shape bias
 - texture bias
 coverImage: cover.jpeg
+thumbnailImagePosition: left
 thumbnailImage: cover.jpeg
 autoThumbnailImage: yes
 photos: https://images.unsplash.com/photo-1495055154266-57bbdeada43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80
@@ -17,7 +20,7 @@ photos: https://images.unsplash.com/photo-1495055154266-57bbdeada43e?ixlib=rb-1.
 <!--toc-->
 
 이번 포스팅은 논문 [ImageNet - Train CNNs are biased towards texture; increasing shape bias improves accuracy and robustness](https://openreview.net/pdf?id=Bygh9j09KX)을 읽고 읽은 내용을 포스팅한다.
-
+<!-- more -->
 # 무엇이 맞는 말일까??
 
 ## 컨볼루션 뉴럴 네트워크(Convolutional Neural Network)가 무엇에 편향되는지 바라보는 두 가지 관점
