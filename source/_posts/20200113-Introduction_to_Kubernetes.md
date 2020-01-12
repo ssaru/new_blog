@@ -1,8 +1,8 @@
 ---
 title: Kubernetes 소개
 date: 2020-01-13 00:57:30
-tags: [Kubernetes, Cloud]
-categories: [Cloud, Dev]
+tags: [Cloud, Kubernetes]
+categories: [Dev, Cloud]
 keywords:
 - Kubernetes
 - Cloud
