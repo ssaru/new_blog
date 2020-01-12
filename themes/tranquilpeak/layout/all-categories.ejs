@@ -29,6 +29,9 @@ function displayCategoriesAndPosts(category) {
     html += '<ul class="archive-posts">';
     // create html for its posts
     posts.sort('date', 'desc').forEach(function(post) {
+        if (childCategories.length > 0) {
+          return;
+        }
         html += '<li class="archive-post">';
         html += '<a class="archive-post-title" href="' + url_for(post.path) + '">';
         html += post.title || '(' + __('post.no_title') + ')';
