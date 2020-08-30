@@ -43,7 +43,7 @@ photos: https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1
 
 # Why Ray?
 
-많은 튜토리얼들이 [Python의 multiprocessing 모듈]([https://docs.python.org/3/library/multiprocessing.html#:~:text=multiprocessing%20is%20a%20package%20that,using%20subprocesses%20instead%20of%20threads.](https://docs.python.org/3/library/multiprocessing.html#:~:text=multiprocessing is a package that,using subprocesses instead of threads.))을 어떻게 사용하는지 설명합니다. 
+많은 튜토리얼들이 [Python의 multiprocessing 모듈](https://docs.python.org/3/library/multiprocessing.html#:~:text=multiprocessing is a package that,using subprocesses instead of threads)을 어떻게 사용하는지 설명합니다. 
 
 하지만 Python의 multiprocessing 모듈은 현대 애플리케이션이 요구하는 분산, 병렬에 대한 요구사항을 충족하기에는 몇가지 한계점이 있습니다.
 
@@ -107,7 +107,7 @@ Ray에서 사용하는 프로세스들은 아래와 같습니다.
 
 아래 예제에서  `f.remote()`에 대한 호출이 즉시 반환되고 다음 _remote function_이 실행되기 때문에, 백그라운드에서 실행되는 `f`에 대한 4개의 복사본(task)은 단순히 해당 라인을 4번 실행하는 것으로 분산, 병렬로 실행할 수 있습니다.
 
-파이썬 함수 `f`를 "remote function"(remote function은 원격에서 실행되거나 비동기적으로 실행될 수 있다)으로 바꾸기 위해서는 함수에 `@ray.remote`라는 데코레이터를 선언해줘야한다. 그리고 함수를 `f.remote()`로 호출하면 즉시 future를 리턴한다.(future는 미래에 있을 출력에 대한 참조값이다) 그리고 실제 함수의 실행은 백그라운드에서 실행될 것이다.(우리는 이러한 실행을 task라고 언급했었다.)
+파이썬 함수 `f`를 "remote function"(remote function은 원격에서 비동기적으로 실행됩니다)으로 바꾸기 위해서는 함수에 `@ray.remote`라는 데코레이터를 선언해줘야한다. 그리고 함수를 `f.remote()`로 호출하면 즉시 future를 리턴한다.(future는 미래에 있을 출력에 대한 참조값이다) 그리고 실제 함수의 실행은 백그라운드에서 실행될 것이다.(우리는 이러한 실행을 task라고 언급했었다.)
 
 ```python
 import ray
