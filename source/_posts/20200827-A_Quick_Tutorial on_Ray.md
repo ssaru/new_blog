@@ -1,5 +1,5 @@
 ---
-title: (번역) Modern Parallel and Distributed Python: A Quick Tutorial on Ray
+title: (번역) Modern Parallel and Distributed Python-A Quick Tutorial on Ray
 date: 2020-08-27 11:31:30
 tags: [Python, Distributed, Parallel, Ray]
 categories: [Develop]
@@ -31,7 +31,9 @@ photos: https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1
 
 병렬, 분산 컴퓨팅은 현대 애플리케이션을 구성하는 요소 중 하나로 자리잡았습니다. 우리는 필요에 따라서(대규모 트래픽, 수치연산 데이터를 다루는 경우) 멀티코어나 여러 대의 머신의 리소스를 최대한 활용해서 애플리케이션을 가속해야할 필요가 있습니다. 웹 사이트를 크롤링하거나 사용자 질의에 응답하는 소프트웨어들은 누군가의 노트북에서 돌아가는 single thread기반의 프로그램이 아니고, 서로 통신하고 상호작용하는 서비스 집합입니다.
 
-![on-premise](./20200827-A_Quick_Tutorial on_Ray/cloud.jpeg)
+<p align="center"><img src="cloud.jpeg"></p>
+
+
 
 <center>(클라우드 컴퓨팅은 메모리, 연산, 스토리지 등을 포함하는 모든 방면에서 제한없는 확장성을 제공하고있습니다. 클라우드가 제공하는 이러한 이점에 적절하게 대응하기 위해서는 분산 어플리케이션을 만들 수 있는 새로운 도구가 필요합니다)</center>
 
@@ -54,11 +56,11 @@ photos: https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1
 
 [Ray](https://github.com/ray-project/ray)는 위에서 언급한 요구사항을 모두 충족합니다. 또한 간단한 작업을 단순하게 만들며, 복잡한 동작을 하게끔 프로그래밍하는 것 또한 가능합니다.
 
-![ray](./20200827-A_Quick_Tutorial on_Ray/ray.png)
+![ray](ray.png)
 
 다른 회사들이 자신들의 Python 프로덕션을 확장하기 위해서 Ray를 어떻게 활용하고있는지 배우고싶다면, [Ray Summit](https://events.linuxfoundation.org/ray-summit/?utm_source=robert&utm_medium=blog&utm_campaign=ray_summit#featuredspeakers)에 등록하세요!
 
-![ray-summit](./20200827-A_Quick_Tutorial on_Ray/ray_summit.png)
+![ray-summit](ray_summit.png)
 
 # Necessary Concepts
 
@@ -74,7 +76,7 @@ photos: https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1
 
 또 다른 예로 도메인에 특화되어 고수준의 추상화를 제공하는 도구들이 있습니다. 딥러닝 모델을 학습하기 위한 [TensorFlow](https://www.tensorflow.org/), 데이터와 SQL 처리를 위한 [Spark](https://spark.apache.org/), 스트림 처리를 위한 [Flink](https://flink.apache.org/)가 대표적입니다. 이 도구들은 neural network나 데이터셋, 스트림에 대한 고수준의 추상화 API를 제공합니다. 하지만, 고수준 추상화를 제공하는 도구들 역시 **직렬화된 프로그래밍(serial programming)**에서 사용하는 추상화와 다르기 때문에, 애플리케이션 코드 전체를 그에 맞게 재작성해줘야하는 단점이 있습니다.
 
-![ray-summit](./20200827-A_Quick_Tutorial on_Ray/distributed_computing_tools.jpeg)
+![ray-summit](distributed_computing_tools.jpeg)
 
 <center>(분산 컴퓨팅을 위한 도구들. 왼쪽은 저수준의 추상화 API를 지원하는 도구, 오른쪽은 고수준의 추상화 API를 제공하는 도구)</center>
 
@@ -170,7 +172,7 @@ task 의존성을 잘 설계하면 task들을 더 빨리 수행되게 할 수 �
 
 매우 간단한 예제이지만, 실제로 이러한 형태로 큰 벡터를 통합하는 것은 애플리케이션에 큰 병목이 되기도 합니다. 이런 병목 지점에서 task 의존성을 잘 설계한다면, 단 한줄의 코드 변경으로 시간 복잡도를 선형 시간에서 로그메틱 시간으로 변경할 수 있습니다.
 
-![aggregation.jpeg](./20200827-A_Quick_Tutorial on_Ray/aggregation.jpeg)
+![aggregation.jpeg](aggregation.jpeg)
 
 <center>(두 연산 그래프는 같은 결과를 반환하지만, 좌측 그림은 의존성 그래프의 깊이가 7이며, 우측 그림은 의존성 그래프의 깊이가 3입니다. 이 경우 우측 연산 그래프의 연산이 더 빠릅니다)</center>
 
