@@ -60,7 +60,7 @@
     "hexo-math": "^3.0.4",
     "hexo-renderer-kramed": "^0.1.4",
     "hexo-util": "0.6.3",
-    "jquery": "3.4.1",
+    "jquery": "3.5.0",
     "jsdom": "15.1.1",
     "moment": "2.24.0",
     "react": "^15.6.2",
