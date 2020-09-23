@@ -25,7 +25,9 @@ photos: https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1
 
 [Robert Nishihara](https://github.com/robertnishihara)의 허락을 받아, [Modern Parallel and Distributed Python: A Quick Tutorial on Ray](https://towardsdatascience.com/modern-parallel-and-distributed-python-a-quick-tutorial-on-ray-99f8d70369b8)을 번역한 글입니다.
 
-# What is [Ray](https://github.com/ray-project/ray)?
+
+
+## What is [Ray](https://github.com/ray-project/ray)?
 
 [Ray](https://github.com/ray-project/ray)는 파이썬에서 병렬, 분산 프로그래밍을 위한 오픈소스 프로젝트입니다.
 
@@ -33,9 +35,7 @@ photos: https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1
 
 > 웹 사이트를 크롤링하거나 사용자 질의에 응답하는 소프트웨어들은 누군가의 노트북에서 돌아가는 single thread기반의 프로그램이 아니고, 서로 통신하고 상호작용하는 서비스 집합이라고 볼 수 있습니다.
 
-<p align="center"><img src="cloud.jpeg"></p>
-
-
+![cloud](cloud.jpeg)
 
 <center>(클라우드 컴퓨팅은 메모리, 연산, 스토리지 등 다방면으로 끊임없는 확장성을 제공하고있습니다. 클라우드가 제공하는 이러한 이점에 적절하게 대응하기 위해서는 분산 어플리케이션을 만들 수 있는 새로운 도구가 필요합니다)</center>
 
@@ -43,7 +43,9 @@ photos: https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1
 
 이번 포스팅은 Ray를 사용해서 병렬,분산 어플리케이션을 만드는 방법에 대해서 설명합니다.
 
-# Why Ray?
+
+
+## Why Ray?
 
 많은 튜토리얼들이 [Python의 multiprocessing 모듈](https://docs.python.org/3/library/multiprocessing.html#:~:text=multiprocessing is a package that,using subprocesses instead of threads)을 어떻게 사용하는지 설명합니다. 
 
@@ -66,7 +68,9 @@ photos: https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1
 
 ![ray-summit](ray_summit.png)
 
-# Necessary Concepts
+
+
+## Necessary Concepts
 
 전통적으로 프로그래밍은 **1). 함수(Functions)**, **2) 클래스(Classes)**라는 핵심 개념에 의존합니다. 생각해보면 우리는 함수와 클래스만으로 많은 애플리케이션들을 만들어왔습니다.
 
@@ -86,7 +90,7 @@ photos: https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1
 
 Ray는 위에서 설명한 도구들과 같은 고수준, 저수준이 아닌 중간수준에 위치합니다. Ray는 함수와 클래스를 task, actor라고 불리는 분산환경에 적합한 형태로 변환하며, 이를 통해 병렬, 분산 컴퓨팅을 지원하는 메커니즘을 가지고 있습니다. 따라서 사용자들은 이전과 다르게 코드를 재작성 없이 기존의 함수와 클래스 구조를 유지하면서 분산, 병렬 프로그래밍을 할 수 있습니다.
 
-# Starting Ray
+## Starting Ray
 
 Ray의 `ray.init()`명령어는 Ray에서 사용하는 프로세스들을 모두 구동합니다. 
 
@@ -103,7 +107,7 @@ Ray의 `ray.init()`명령어는 Ray에서 사용하는 프로세스들을 모두
 >
 > Python은 GIL(Global Interpreter Lock)으로 인해 multi-threding 지원에 한계가 있습니다.
 
-# Parallelism with Tasks
+## Parallelism with Tasks
 
 `@ray.remote`라는 데코레이터를 함수 위에 선언해주는 것만으로 파이썬 함수를 Ray에서 실행 가능한 _remote function_으로 변경할 수 있습니다. 
 
@@ -141,7 +145,7 @@ results = ray.get(result_ids)  # [0, 1, 2, 3]
 
 
 
-## Task Dependencies
+### Task Dependencies
 
 task는 또 다른 task에 의존할 수 있습니다. 
 
@@ -172,7 +176,7 @@ z = ray.get(z_id)
 
 
 
-## Aggregating Values Efficiently
+### Aggregating Values Efficiently
 
 task 의존성을 잘 설계하면 효율적인 방식으로 작업을 수행할 수 있습니다.
 
@@ -239,7 +243,9 @@ while len(values) > 1:
 result = ray.get(values[0])
 ```
 
-# From Classes to Actors
+
+
+## From Classes to Actors
 
 클래스없이 좋은 애플리케이션을 만드는 것은 어려운 일입니다. 그리고 이는 분산환경에서도 마찬가지로 어렵습니다.
 
@@ -279,7 +285,7 @@ print(ray.get(c.get_value.remote()))  # 2
 
 
 
-## Actor Handles
+### Actor Handles
 
 위에서 우리는 파이썬의 메인 스크립트에서 액터의 메소드를 실행하는 예제를 살펴봤습니다. 
 
@@ -340,6 +346,8 @@ task와 액터는 Ray가 제공하는 핵심적인 추상입니다. 이 두 가�
 
 Ray는 딥러닝에 사용되는 정교한 애플리케이션 중 하나인 [분산 강화학습](https://docs.ray.io/en/latest/rllib.html), [하이퍼파라미터 튜닝 도구](https://docs.ray.io/en/latest/tune/index.html), [가속화된 판다스](https://docs.ray.io/en/latest/pandas_on_ray.html)를 제공하니 한번 살펴보시기 바랍니다.
 
-# Reference
+
+
+## Reference
 
 1. [Modern Parallel and Distributed Python: A Quick Tutorial on Ray](https://towardsdatascience.com/modern-parallel-and-distributed-python-a-quick-tutorial-on-ray-99f8d70369b8)
