@@ -102,7 +102,7 @@ A라는 유형을 갖는 객체가 있다고 가정해봅시다. 이때,
 
 선형대수는 머신러닝과 수학에서 중요한 역활을 합니다. 이번 챕터에서 소개되는 개념들은 chapter 3에서 geometry에 대한 아이디어로 확장됩니다. chapter 5에서는 벡터 미적분(vector calculus)에 대해서 논의합니다. 벡터 미적분은 매트릭스 연산에 대한 지식이 필수적으로 요구됩니다. chapter 10에서는 PCA를 활용한 차원 축소를 위해 사영(projection)을 사용할 것입니다. chapter 9에서는 선형 회귀(linear regression)에 대해서 논의합니다. 선형 회귀에서 선형대수는 least-square problems을 푸는 중요한 역활을 합니다.
 
-![algebra](algebra.png)
+![concept_mindmap](concept_mindmap.png)
 
 
 
