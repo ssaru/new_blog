@@ -39,9 +39,9 @@ MML book 스터디를 진행하고있습니다. 이번 포스팅은 MML book Cha
 
 선형대수는 벡터(vector)와 벡터들을 조작하기 위한 규칙들을 연구하는 학문입니다. 
 
-벡터라고 하면 많은 사람들이 중/고등학교에서 배운 geometric vector를 생각합니다. 하지만 책에서는 벡터의 일반화된 개념에 대해서 논의할 것입니다.
+벡터라고 하면 많은 사람들이 중/고등학교에서 배운 geometric vector를 생각합니다. 하지만 책에서는 벡터의 일반화된 개념에 대해서 논의할 것입니다.   
 
-
+​    
 
 ### 벡터의 정의
 
@@ -59,7 +59,7 @@ A라는 유형을 갖는 객체가 있다고 가정해봅시다. 이때,
 1. 벡터끼리 덧셈 연산을(add) 했을 경우 벡터가 나옴
 2. 벡터에 스칼라를 곱했을 때, 벡터가 나옴
 
-
+  
 
 벡터에 대한 대표적인 예는 아래와 같습니다.
 
@@ -73,7 +73,7 @@ A라는 유형을 갖는 객체가 있다고 가정해봅시다. 이때,
 
    두 다항식은 서로 더해질 수 있으며, 더해진 결과 또한 다항식입니다. 그리고 다항식은 스칼라( $\lambda \in R$)로 곱셈 연산을 해도 다항식입니다. 따라서 다항식 또한 벡터입니다.
 
-그 외에도 3. **Audio signals**, 4. **Elements of $R^{n}$(tuples of $n$ real numbers)**도 벡터입니다.
+그 외에도 3. **Audio signals**, 4. **Elements of $$R^{n}$$(tuples of $$n$$ real numbers)**도 벡터입니다.
 
 > Audio signals, Elements of $R^{n}$은 내용상 크게 문제가 되지 않기 때문에 생략했습니다.
 >
@@ -81,16 +81,16 @@ A라는 유형을 갖는 객체가 있다고 가정해봅시다. 이때,
 
 ![vector](vector.png)
 
-
+​    
 
 ### 책에서 초점을 두고 설명하고자 하는 것
 
 본 책에서는 다음과 같은 내용에 초점을 두고 선형 대수를 설명합니다.
 
-1. 선형 대수의 대부분 알고리즘은 $R^{n}$공간에서 정의가 됩니다. 따라서 책에서는 주로 $R^{n}$공간의 벡터에 대해서 초점을 맞춰 설명합니다. 특히 chapter 8에서 데이터를  $R^{n}$공간의 벡터로 간주하고 설명할 것입니다.
-2. **유한 차원 벡터 공간에(finite dimensional vector space) 초점을 맞춥니다. 유한 차원 벡터 공간의 경우, 모든 종류의 벡터와  $R^{n}$공간 간의 1:1 대응이 존재합니다.**
+1. 선형 대수의 대부분 알고리즘은 $$R^{n}$$ 공간에서 정의가 됩니다. 따라서 책에서는 주로 $$R^{n}$$ 공간의 벡터에 대해서 초점을 맞춰 설명합니다. 특히 chapter 8에서 데이터를  $$R^{n}$$공간의 벡터로 간주하고 설명할 것입니다.
+2. **유한 차원 벡터 공간에(finite dimensional vector space) 초점을 맞춥니다. 유한 차원 벡터 공간의 경우, 모든 종류의 벡터와  $$R^{n}$$공간 간의 1:1 대응이 존재합니다.**
 
-
+​    
 
 ### 선형 대수와 머신러닝 알고리즘 간의 상관관계
 
@@ -102,13 +102,13 @@ A라는 유형을 갖는 객체가 있다고 가정해봅시다. 이때,
 
 ![concept_mindmap](concept_mindmap.png)
 
-
+​    
 
 ## 선형 시스템(Systems of Linear Equations)
 
 선형 시스템은 선형 대수에서 중심적인 역활을 합니다. 많은 문제들은 선형 시스템으로 형식화되며, 선형대수는 이를 풀 수 있는 도구를 제공합니다.
 
-
+​    
 
 **Example 2.1**
 
@@ -138,7 +138,7 @@ $$x_{1},...,x_{n},\ \ \ \ (x_{1},...,x_{n}) \in R^{n}$$
 
 은 시스템에서 미지수가 되며, 식 (2.3)을 만족하는 해가 이 선형 시스템의 해가 됩니다.
 
-
+​    
 
 **Example 2.2**
 
@@ -190,6 +190,8 @@ $$(\frac{5}{2} - \frac{3}{2}a, \frac{1}{2}+ \frac{1}{2}a, a),\ \  a \in R$$
 
 선형 회귀(linear regression)은 Example 2.1과 같은 예제에서 선형 시스템을 풀지 못했을 경우 이를 푸는 방법입니다.
 
+​    
+
 ### 선형 시스템에 대한 기하학적 해석(Geometric Interpretation of System of Linear Equation)
 
 두 개의 변수($$x_{1}, x_{2}$$)를 갖는 선형 시스템에서 각각의 시스템은 $$x_{1}$$ - $$x_{2}$$  평면에서 하나의 선이 됩니다.
@@ -206,13 +208,15 @@ $$(\frac{5}{2} - \frac{3}{2}a, \frac{1}{2}+ \frac{1}{2}a, a),\ \  a \in R$$
 
 이때의 교집합은 1)면, 2)선, 3)점, 4)공집합(해가 없음)으로 나타나게됩니다.
 
-
+​    
 
 ## 행렬 (Matrices)
 
 행렬 또한 선형 대수에서 중요한 역활을 합니다. 행렬은 선형 시스템을 간단히 표기하는데 사용하기도 하지만, Section 2.7에서 살펴볼 선형 함수(linear mapping)를 표현하기도 합니다.
 
 행렬의 재밌는 주제를 논의하기 전에 먼저, 1) 행렬이 무엇이고, 2) 행렬로 어떤 연산이 가능한지 살펴봅시다.
+
+​    
 
 **Definition 2.1 (Matrix)**
 
@@ -243,6 +247,8 @@ $R^{m \times n}$는 실수공간에 있는 $(m, n)$-행렬입니다.
 
 ![matrix](matrix.png)
 
+​    
+
 ### 행렬의 덧셈과 곱셈
 
 두 행렬 $A \in R^{m \times n}$, $B \in R^{m \times n}$의 합은 element-wise sum으로 정의됩니다
@@ -259,18 +265,24 @@ $$c_{ij} = \Sigma_{l=1}^{n} a_{il}b_{lj},\ \ \ \ i = 1,...,m,\ \ \ \ \ j = 1,...
 
 위와 같이 $A$의 $i$th row의 원소와 $B$의 $j$th columns의 원소끼리 곱하는 연산을 Section 3.2에서는 **dot product**라고 부르며, $A \cdot B$로 표기합니다.
 
-**Remark**
-
-행렬의 곱은 인접 차원이 같아야합니다. 예를 들어 $n \times k$ 행렬 $A$는 $k \times m$ 행렬 $B$와 곱셉 연산을 수행할 수 있습니다. 이때, 행렬 $B$는 행렬 $A$ 우측에 있어야만 합니다.
-
-$$\underbrace{A}_{n \times k} \underbrace{B}_{k \times m} =
-\underbrace{C}_{n \times m}$$
-
-프로덕트(product) $BA$는 이웃 차원이 맞지 않기 때문에 정의되지 않습니다.
+​    
 
 **Remark**
 
-행렬 곱은 element-wise 연산으로 정의되지 않습니다. 프로그래밍 언어에서 종종 나타나는 array간 element-wise 곱은 ***Hadamard product***라고 부릅니다.
+> 행렬의 곱은 인접 차원이 같아야합니다. 예를 들어 $n \times k$ 행렬 $A$는 $k \times m$ 행렬 $B$와 곱셉 연산을 수행할 수 있습니다. 이때, 행렬 $B$는 행렬 $A$ 우측에 있어야만 합니다.
+
+>  $$\underbrace{A}_{n \times k} \underbrace{B}_{k \times m} =
+> \underbrace{C}_{n \times m}$$
+
+> 프로덕트(product) $BA$는 이웃 차원이 맞지 않기 때문에 정의되지 않습니다.
+
+​    
+
+**Remark**
+
+> 행렬 곱은 element-wise 연산으로 정의되지 않습니다. 프로그래밍 언어에서 종종 나타나는 array간 element-wise 곱은 ***Hadamard product***라고 부릅니다.
+
+​    
 
 **Definition 2.2 (Identity Matrix)** 
 
@@ -301,9 +313,11 @@ $$I_{n} :=
 
   $$\forall A \in R^{m \times n} : I_{m}A = AI_{n} = A, \ \ \ \ I_{m} \neq I_{n}\ for\ \  m \neq n.$$
 
-
+​    
 
 ### 역행렬과 전치행렬
+
+​    
 
 **Definition 2.3 (Inverse)**
 정방행렬 $A \in R^{n \times n}$이 있을 때, 매트릭스 $B \in R^{n \times n}$와의 관계가 $AB = I_{n} = BA$라는 속성을 만족할 때, $B$는 $A$의 역행렬이라고 부르며 $A^{-1}$로 표기합니다
@@ -312,44 +326,48 @@ $$I_{n} :=
 
 역행렬이 존재한다면, 이는 유일합니다. Section 2.3에서는 선형 시스템을 풀어 역행렬을 계산하는 일반적인 방법을 논의합니다.
 
+​    
+
 **Remark** (Existence of the Inverse of a $2 \times 2$-matrix)
 
-$$A := 
-\begin{bmatrix}
-a_{11} & a_{12} \\
-a_{21} & a_{22}
-\end{bmatrix}
-\in R^{2 \times 2}.
-\ \ \ \ (2.21)$$
+>  $$A := 
+> \begin{bmatrix}
+> a_{11} & a_{12} \\
+> a_{21} & a_{22}
+> \end{bmatrix}
+> \in R^{2 \times 2}.
+> \ \ \ \ (2.21)$$
 
-$$A^{'} := 
-\begin{bmatrix}
-a_{22} & -a_{12} \\
--a_{21} & a_{11}
-\end{bmatrix}
-\in R^{2 \times 2}.
-\ \ \ \ (2.22)$$
+> $$A^{'} := 
+> \begin{bmatrix}
+> a_{22} & -a_{12} \\
+> -a_{21} & a_{11}
+> \end{bmatrix}
+> \in R^{2 \times 2}.
+> \ \ \ \ (2.22)$$
 
-위와 같은 행렬이 있을 때, 두 행렬을 곱하게 되면 다음과 같은 행렬을 얻을 수 있습니다.
+>  위와 같은 행렬이 있을 때, 두 행렬을 곱하게 되면 다음과 같은 행렬을 얻을 수 있습니다.
 
-$$AA^{'} =
-\begin{bmatrix}
-a_{11}a_{22} - a_{12}a_{21} & 0 \\
-0 & a_{11}a_{22} - a_{12}a_{21} \\
-\end{bmatrix} = 
-(a_{11}a_{22} - a_{12}a_{21})I
-\ \ \ \ (2.23)$$
+>  $$AA^{'} =
+> \begin{bmatrix}
+> a_{11}a_{22} - a_{12}a_{21} & 0 \\
+> 0 & a_{11}a_{22} - a_{12}a_{21} \\
+> \end{bmatrix} = 
+> (a_{11}a_{22} - a_{12}a_{21})I
+> \ \ \ \ (2.23)$$
 
-따라서 역행렬 $A^{-1}$은 아래와 같습니다.
+>  따라서 역행렬 $A^{-1}$은 아래와 같습니다.
 
-$$A^{'} := 
-\frac{1}{a_{11}a_{22} - a_{12}a_{21}}
-\begin{bmatrix}
-a_{22} & -a_{12} \\
--a_{21} & a_{11}
-\end{bmatrix}$$
+>  $$A^{'} := 
+> \frac{1}{a_{11}a_{22} - a_{12}a_{21}}
+> \begin{bmatrix}
+> a_{22} & -a_{12} \\
+> -a_{21} & a_{11}
+> \end{bmatrix}$$
 
-이 때, $$a_{11}a_{22} - a_{12}a_{21} \neq 0$$ 이어야합니다. Section 4.1에서는 $$a_{11}a_{22} - a_{12}a_{21}$$가 $$2 \times 2$$-matrix의 행렬식(determinant)임을 살펴봅니다. 우리는 행렬식을 통해 행렬이 역행렬을 갖는지 확인할 수 있습니다.
+> 이 때, $$a_{11}a_{22} - a_{12}a_{21} \neq 0$$ 이어야합니다. Section 4.1에서는 $$a_{11}a_{22} - a_{12}a_{21}$$가 $$2 \times 2$$-matrix의 행렬식(determinant)임을 살펴봅니다. 우리는 행렬식을 통해 행렬이 역행렬을 갖는지 확인할 수 있습니다.
+
+​    
 
 **Definition 2.4** (Transpose)
 
@@ -364,7 +382,7 @@ $AA^{-1} = I = A^{-1}A \\
 (A+B)^{T} = A^{T} + B^{T} \\
 (AB)^{T} = B^{T}A^{T}$$
 
-
+​    
 
 **Definition 2.5** (Symmetric Matrix, 대칭행렬)
 
@@ -374,24 +392,28 @@ $A \in R^{n \times n}$인 행렬이 대칭행렬이라면 $A = A^{T}$입니다.
 
 $(A^{-1})^{T} = (A^{T})^{-1} =: A^{-T}$
 
+​    
+
 **Remark** (Sum and Product of Symmetric Matrices)
 
-임의의 두 대칭행렬의 합은 항상 대칭행렬이 됩니다. $A, B \in R^{n \times n}$
+> 임의의 두 대칭행렬의 합은 항상 대칭행렬이 됩니다. $A, B \in R^{n \times n}$
 
-대칭행렬의 곱은 항상 정의가 되지만, 결과는 일반적으로 대칭행렬이 아닙니다.
+> 대칭행렬의 곱은 항상 정의가 되지만, 결과는 일반적으로 대칭행렬이 아닙니다.
 
-$\begin{bmatrix}
-1&0 \\
-0&0\\
-\end{bmatrix}
-\begin{bmatrix}
-1&1 \\
-1&1\\
-\end{bmatrix} = 
-\begin{bmatrix}
-1&1 \\
-0&0\\
-\end{bmatrix}$
+>  $\begin{bmatrix}
+> 1&0 \\
+> 0&0\\
+> \end{bmatrix}
+> \begin{bmatrix}
+> 1&1 \\
+> 1&1\\
+> \end{bmatrix} = 
+> \begin{bmatrix}
+> 1&1 \\
+> 0&0\\
+> \end{bmatrix}$
+
+​    
 
 ### 스칼라에 의한 곱셈
 
@@ -417,6 +439,8 @@ $\begin{bmatrix}
 
   $$(\lambda+\psi)C = \lambda C + \psi C,\ \ C \in R \\
   \lambda(B + C) = \lambda B + \lambda C,\ \ B, C \in R$$
+
+​    
 
 ### 선형 시스템을 간단하게 표현하는 방법
 
