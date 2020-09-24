@@ -1,7 +1,7 @@
 ---
 title: (MML Book 선형대수 Chapter ~2.2) 선형대수/벡터/선형시스템/매트릭스
 date: 2020-09-23 23:31:30
-tags: [Python, Distributed, Parallel, Ray]
+tags: [Math, Linear algebra, Vector, Linear equation, Matrix]
 categories: [Develop]
 keywords:
 - Math
@@ -71,9 +71,9 @@ A라는 유형을 갖는 객체가 있다고 가정해봅시다. 이때,
 
    Figure 2.1 (b) 에서 표현하고 있는 polynomial(다항식) 또한 벡터입니다.
 
-   두 다항식은 서로 더해질 수 있으며, 더해진 결과 또한 다항식입니다. 그리고 다항식은 스칼라( $\lambda \in R$)로 곱셈 연산을 해도 다항식입니다. 따라서 다항식 또한 벡터입니다.
+   두 다항식은 서로 더해질 수 있으며, 더해진 결과 또한 다항식입니다. 그리고 다항식은 스칼라( $$\lambda \in R$$ )로 곱셈 연산을 해도 다항식입니다. 따라서 다항식 또한 벡터입니다.
 
-그 외에도 3. **Audio signals**, 4. **Elements of $$R^{n}$$(tuples of $$n$$ real numbers)**도 벡터입니다.
+그 외에도 3. **Audio signals**, 4. Elements of $$R^{n}$$ (tuples of $$n$$ real numbers)도 벡터입니다.
 
 > Audio signals, Elements of $R^{n}$은 내용상 크게 문제가 되지 않기 때문에 생략했습니다.
 >
