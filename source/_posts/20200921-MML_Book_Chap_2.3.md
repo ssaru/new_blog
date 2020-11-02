@@ -2,7 +2,7 @@
 title: (MML Book 선형대수 Chapter ~2.2) 선형대수/벡터/선형시스템/매트릭스
 date: 2020-09-23 23:31:30
 tags: [Math, Linear algebra, Vector, Linear equation, Matrix]
-categories: [Develop]
+categories: [Math]
 keywords:
 - Math
 - Linear algebra
