@@ -2,7 +2,7 @@
 title: (번역) Modern Parallel and Distributed Python-A Quick Tutorial on Ray
 date: 2020-08-27 11:31:30
 tags: [Python, Distributed, Parallel, Ray]
-categories: [Develop]
+categories: [Software, Disbritubed Computing]
 keywords:
 - Ray
 - Python

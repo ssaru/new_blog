@@ -7,9 +7,11 @@
   },
   "dependencies": {
     "eslint": "^7.25.0",
+    "gauge": "^4.0.0",
     "hexo": "^5.4.0",
+    "hexo-cli": "^4.3.0",
     "hexo-deployer-git": "^3.0.0",
-    "hexo-deployer-rsync": "^1.0.0",
+    "hexo-deployer-rsync": "^0.1.1",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-feed": "^3.0.0",
@@ -17,7 +19,7 @@
     "hexo-generator-sitemap": "^2.1.0",
     "hexo-generator-tag": "^1.0.0",
     "hexo-renderer-ejs": "^1.0.0",
-    "hexo-renderer-kramed": "^0.1.4",
+    "hexo-renderer-kramed": "^0.1.2",
     "hexo-renderer-marked": "^4.0.0",
     "hexo-renderer-mathjax": "^0.6.0",
     "hexo-renderer-stylus": "^2.0.1",
@@ -25,6 +27,7 @@
     "install": "^0.13.0",
     "jquery": "^3.6.0",
     "jsdom": "^16.5.3",
-    "npm": "^7.11.2"
+    "npm": "^7.0.0",
+    "npm-check-updates": "^12.0.2"
   }
 }

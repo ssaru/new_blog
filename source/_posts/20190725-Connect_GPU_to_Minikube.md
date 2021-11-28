@@ -2,7 +2,7 @@
 title: Connect GPU to Minikube
 date: 2019-07-25 21:56:53
 tags: [Minikube, GPU, Kubernetes]
-categories: [Develop, Cloud]
+categories: [Software, Cloud]
 keywords:
 - kubernetes
 - minikube

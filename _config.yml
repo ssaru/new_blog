@@ -7,9 +7,10 @@ title: Martin Hwang
 #subtitle: test1
 #description: test2
 keywords:
-  - cloud
-  - deeplearning
-  - signal processing
+    - cloud
+    - deeplearning
+    - signal processing
+    - data scientists
 author: Martin Hwang
 language: en
 timezone: Asia/Seoul
@@ -42,20 +43,20 @@ post_asset_folder: true
 relative_link: false
 future: true
 highlight:
-  enable: true
-  line_number: true
-  auto_detect: false
-  tab_replace:
-  
+    enable: true
+    line_number: true
+    auto_detect: false
+    tab_replace:
+
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
-  per_page: 10
-  order_by: -date
-  
+    path: ''
+    per_page: 10
+    order_by: -date
+
 # Category & Tag
 default_category: uncategorized
 category_map:
@@ -81,32 +82,31 @@ theme: tranquilpeak
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repo: git@github.com:ssaru/ssaru.github.io.git
-  branch: master
+    type: git
+    repo: git@github.com:ssaru/ssaru.github.io.git
+    branch: master
 
 feed:
-  type: atom
-  path: atom.xml
-  limit: 20
+    type: atom
+    path: atom.xml
+    limit: 20
 
 algolia:
-  appId: "M60MWL1GJ0"
-  apiKey: "af8ef83d732cf34d3f250ab4335e23cb"
-  adminApiKey: "122207f7816f7001cec928863096222c"
-  chunkSize: 5000
-  indexName: "SSARU-HEXO"
-  fields:
-    - title
-    - tags
-    - date
-    - categories
-    - excerpt
-    - permalink
-    - thumbnailImageUrl
- 
-mathjax:
-  enable: true 
-katex:
-  enable: true
+    appId: 'M60MWL1GJ0'
+    apiKey: 'af8ef83d732cf34d3f250ab4335e23cb'
+    adminApiKey: '122207f7816f7001cec928863096222c'
+    chunkSize: 5000
+    indexName: 'SSARU-HEXO'
+    fields:
+        - title
+        - tags
+        - date
+        - categories
+        - excerpt
+        - permalink
+        - thumbnailImageUrl
 
+mathjax:
+    enable: true
+katex:
+    enable: true
