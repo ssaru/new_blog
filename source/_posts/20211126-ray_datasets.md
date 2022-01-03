@@ -5,7 +5,7 @@ tags: [Python, Distributed, Parallel, Ray]
 categories: [Software, Disbritubed Computing]
 keywords:
 - Ray
-- Error
+- Distributed Computing
 coverImage: cover.jpeg
 thumbnailImagePosition: left
 thumbnailImage: cover.jpeg
