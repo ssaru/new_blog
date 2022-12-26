@@ -85,6 +85,8 @@ deploy:
     type: git
     repo: git@github.com:ssaru/ssaru.github.io.git
     branch: master
+    name: martinHwnag
+    email: dhhwang89@gmail.com
 
 feed:
     type: atom
