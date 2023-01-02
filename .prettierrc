@@ -1,0 +1,5 @@
+{
+    "singleQuote": true, // 따옴표는 모두 '' 로 사용
+    "semi": true, // 세미콜론 사용
+    "tabWidth": 4 // tab 간격은 4
+}
