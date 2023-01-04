@@ -26,11 +26,9 @@ Machine Learning을 시작한 지는 오래되었는데, 자주 나오던 likeli
 
 한국어로는 가능도 혹은 우도라고 불리는 likelihood는 likelihood function이라고도 부른다. [위키피디아의 likelihood function](https://en.wikipedia.org/wiki/Likelihood_function)을 보면, likelihood function은 주어진 데이터가 어느 확률 분포와 추출되었는지에 대한 indicate function이라고 이야기한다. 즉, 추출된 데이터는 고정되어있는 상태에서 이 데이터가 어느 확률분포에서 왔는지 계산했을 때, 어느 확률분포에서 왔는지에 대한 유사도가 수치로 나타나는게 likelihood function이라고 이해하면 되겠다.
 
-likelihood function을 수식으로 나타내면 아래와 같다.
+likelihood function을 수식으로 나타내면 아래와 같다. 
 
-$$
-\mathcal{L}(\theta | x) = Pr(X=x|\theta)
-$$
+$$ \mathcal{L}(\theta | x) = Pr(X=x|\theta) $$
 
 ## Likelihood의 직관
 다음과 같이 5개의 데이터를 얻었다고 가정하자.
