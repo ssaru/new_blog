@@ -108,7 +108,7 @@ algolia:
     - permalink
     - thumbnailImageUrl
 
-# mathjax:
-#     enable: true
+mathjax:
+  enable: true
 katex:
   enable: true
